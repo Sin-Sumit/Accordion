@@ -1,6 +1,14 @@
 # Accordion
 - Accordion project is similar to FAQ's section which we all know and familiar with that from many websites.
 - This project is implemented using ReactJs, and follow the contribution steps for making contribution to this project.
+- To run this project first clone it to your local system and install the dependecies using
+```
+   npm install
+```
+- It will take some time, after that use below command to start the local server.
+```
+   npm start
+```
 
 # Contribution Steps
 
