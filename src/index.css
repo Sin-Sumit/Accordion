@@ -99,6 +99,39 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
+.title{
+  background-color: var(--clr-grey-10);
+}
+
+label {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 3;
+  padding-left: 1rem;
+}
+
+input {
+  display: none;
+}
+
+/* Contents */
+article {
+  overflow: hidden;
+  height: 0;
+  transition: 0.6s;
+}
+article p {
+  padding: 20px;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+input:checked ~ article {
+  height: 150px;
+  border-top: 1px solid #ccc;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;

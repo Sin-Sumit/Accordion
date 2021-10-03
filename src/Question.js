@@ -1,29 +1,17 @@
-import React, { useState, useEffect} from 'react';
-import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-const Question = ({id,title,info}) => {
-  const [passinfo, setPassInfo] = useState('')
-  const handleClick = () => {
-    if (passinfo === ''){
-      setPassInfo(info)
-    }
-    else{
-      setPassInfo('')
-    }
-  }
-  // useEffect(() => {
-  //   handleClick();
-  // },[])
+import React from 'react';
+
+const Question = ({ id, title, info }) => {
   return (
-  <article className='question'>
-    <header>
-      <h4>{title}</h4>
-      <button className='btn' onClick={handleClick}>
-        {passinfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
-      </button>
-    </header>
-    <p>{passinfo}</p>
-  </article>
-    );
+    <div>
+      <input id={id} name="accordion" type="radio" checked></input>
+      <div className="title">
+        <label for={id}>{title}</label>
+      </div>
+      <article>
+        <p>{info}</p>
+      </article>
+    </div>
+  );
 };
 
 export default Question;
