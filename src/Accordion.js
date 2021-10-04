@@ -17,7 +17,7 @@ const Accordion = () => {
             <section className="info">
                 {questions.map((question) => {
                     return (
-                        <article className="question">
+                        <article className="question" key={question.id}>
                             <header>
                                 <h4>{question.title}</h4>
                                 <button className='btn' onClick={() => {handleClick(question.id)}}>
